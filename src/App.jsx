@@ -3,10 +3,11 @@ import { useState } from "react"
 import Login from "./views/Login"
 import Index from "./views/Index"
 import Home from "./views/Home"
+import Create from "./views/Create"
 
 function App() {
 
-  const [isLogged, setIsLogged] = useState(false)
+
  
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Index />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
     </>
   )
