@@ -11,11 +11,13 @@ export const reviewSlice = createSlice({
         add: (state, action) => {
             state.reviews = [...state.reviews, action.payload]
         },
-        
+        del: (state, action) => {
+            state.reviews = state.reviews.filter((data) => data.id !== action.payload)
+        },
     }
 })
 
 
 
-export const {add} = reviewSlice.actions
+export const {add, del} = reviewSlice.actions
 export default reviewSlice.reducer
