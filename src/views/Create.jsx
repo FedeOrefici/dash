@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Create = () => {
+
+  
+
+
+
   return (
     <div>
       <form>
@@ -25,6 +30,7 @@ const Create = () => {
             <p>rate</p>
             <p>*****</p>
         </div>
+        <button>create</button>
       </form>
     </div>
   )
