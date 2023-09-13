@@ -3,7 +3,7 @@ import { useState } from "react"
 import Login from "./views/Login"
 import Index from "./views/Index"
 import Home from "./views/Home"
-import Create from "./views/Create"
+import Create from "./views/create/Create"
 
 function App() {
 

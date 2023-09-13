@@ -4,7 +4,7 @@ const SearchBar = () => {
   return (
     <div>
       <input type='search' />
-      <butotn>search</butotn>
+      <button>search</button>
     </div>
   )
 }
