@@ -2,13 +2,18 @@ import React, { useState } from 'react'
 import { add } from '../../../redux/reducer'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { v4 } from 'uuid'
+
 
 const Create = () => {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const generateId = v4()
+
 
   const [data, setData] = useState({
+    id: generateId,
     country: '',
     description: '',
     picture: '',
@@ -27,6 +32,7 @@ const Create = () => {
     event.preventDefault()
     dispatch(add(data))
     setData({
+      id: generateId,
       country: '',
       description: '',
       picture: '',
